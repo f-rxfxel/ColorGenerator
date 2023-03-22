@@ -26,13 +26,12 @@
                         <div class="modal-body d-flex align-items-center mt-3 justify-content-center">
                             <div class="input-group mb-3 w-75">
                                 <span class="input-group-text text-center">RGB</span>
-                                <input id="r" type="number" placeholder="0-255" class="form-control text-center"
-                                    maxlength="3">
-                                <input id="g" type="number" placeholder="0-255" class="form-control text-center"
-                                    maxlength="3">
-                                <input id="b" type="number" placeholder="0-255" class="form-control text-center"
-                                    maxlength="3">
+                                <input id="r" type="text" placeholder="0-255" class="form-control text-center">
+                                <input id="g" type="text" placeholder="0-255" class="form-control text-center">
+                                <input id="b" type="text" placeholder="0-255" class="form-control text-center">
                             </div>
+                            <input type="text" id="myInput">
+
                         </div>
                         <div class="modal-footer">
                             <div class="d-flex justify-content-center">
@@ -59,7 +58,7 @@
                             <div class="input-group mb-3 w-75">
                                 <span class="input-group-text text-center">HEX</span>
                                 <input id="hex" type="text" placeholder="#000000" aria-label="First name"
-                                    class="form-control text-center" maxlength="7">
+                                    class="form-control text-center" maxlength="6">
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -95,7 +94,6 @@
 
             </div>
         </div>
-        <!-- <a id="clearHEX" class="btn btn-danger py-2 px-4" onclick="trocacor()">trocar cor</a> -->
     </div>
 
     <script src="./script.js"></script>
