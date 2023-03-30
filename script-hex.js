@@ -8,6 +8,8 @@ generateHEX.onclick = () => {
     alert("Preencha o campo para gerar uma cor HEX")
   } else {
     generateBgHEX(hex.value)
+    const modalHEX = bootstrap.Modal.getOrCreateInstance('#modalHEX')
+    modalHEX.hide()
   }
 }
 
@@ -35,4 +37,17 @@ const bgHEX = document.getElementById("background")
 function generateBgHEX(color) {
   bgHEX.style.backgroundColor = color
   hex.value = ""
+}
+
+
+
+
+
+
+document.getElementById("submit").onclick = () => {
+  const usersText = document.getElementById("textInput").value
+  const textNode = document.createElement("p")
+  textNode.innerText = usersText
+  const container = document.getElementById("container")
+  container.appendChild(textNode)
 }

@@ -11,6 +11,8 @@ generateRGB.onclick = () => {
     alert("Preencha todos os campos para gerar uma cor RGB")
   } else {
     generateBgRGB(`rgb(${r.value}, ${g.value}, ${b.value})`)
+    const modalRGB = bootstrap.Modal.getOrCreateInstance('#modalRGB')
+    modalRGB.hide()
   }
 }
 
