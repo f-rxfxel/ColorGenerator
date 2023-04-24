@@ -38,16 +38,3 @@ function generateBgHEX(color) {
   bgHEX.style.backgroundColor = color
   hex.value = ""
 }
-
-
-
-
-
-
-document.getElementById("submit").onclick = () => {
-  const usersText = document.getElementById("textInput").value
-  const textNode = document.createElement("p")
-  textNode.innerText = usersText
-  const container = document.getElementById("container")
-  container.appendChild(textNode)
-}
