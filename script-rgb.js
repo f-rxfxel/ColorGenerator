@@ -23,7 +23,7 @@ rgb.forEach(input => {
     if (isNaN(value)) {
       input.value = value.slice(0, -1);
     } else if (value < 0 || value > 255) {
-      input.value = Math.min(Math.max(parseInt(value), 0), 255);
+      input.value = Math.min(Math.max(value, 0), 255);
     }
   })
 });
