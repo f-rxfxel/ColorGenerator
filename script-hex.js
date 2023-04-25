@@ -31,6 +31,7 @@ hex.addEventListener('input', function () {
 // Limpa os inputs
 const clearHEX = document.getElementById("clearHEX")
 clearHEX.onclick = () => hex.value = ""
+bgHEX.style.backgroundColor = "#ffffff"
 
 // Define a cor do background
 const bgHEX = document.getElementById("background")
