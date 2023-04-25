@@ -28,9 +28,12 @@ rgb.forEach(input => {
   })
 });
 
-// Limpa os inputs
+// Limpa os inputs e reseta o fundo
 const clearRGB = document.getElementById("clearRGB")
-clearRGB.onclick = () => rgb.forEach(input => input.value = "");
+clearRGB.onclick = () => {
+  rgb.forEach(input => input.value = "");
+  bgRGB.style.backgroundColor = "#ffffff"
+}
 
 // Define a cor do background
 const bgRGB = document.getElementById("background")
